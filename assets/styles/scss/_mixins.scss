@@ -1,0 +1,15 @@
+// THEME
+@mixin theme() {
+    .ls {
+        @content;
+    }
+}
+
+// BROWSERS CORE
+@mixin setBrowsersCore($attr, $value, $cores: $browsers-core-default) {
+    #{$attr}: #{$value};
+
+    @each $core in $cores {
+        -#{$core}-#{$attr}: #{$value};
+    }
+}

@@ -1,0 +1,42 @@
+/* BOOT CONFIG */
+* {
+    margin: 0;
+    padding: 0;
+    @include setBrowsersCore(box-sizing, border-box);
+    font-size: 1rem;
+}
+
+body {
+    font-family: $font-alata;
+    color: $color-dark-gray;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        font-family: $font-josefin-sans;
+        color: $color-black;
+        font-weight: normal;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+
+    p {
+        line-height: 1.6em;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}

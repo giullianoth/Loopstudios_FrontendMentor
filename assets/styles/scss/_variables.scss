@@ -1,0 +1,19 @@
+// BREAKPOINTS
+$breakpoint-mobile: 375px;
+$breakpoint-desktop: 1440px;
+
+// COLORS
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-dark-gray: hsl(0, 0%, 55%);
+$color-very-dark-gray: hsl(0, 0%, 41%);
+
+// TIPOGRAPHY
+$font-alata: 'Alata', sans-serif;
+$font-josefin-sans: 'Josefin Sans', sans-serif;
+
+// BROWSERS CORE
+$browsers-core-default: (
+    "moz",
+    "webkit"
+);
