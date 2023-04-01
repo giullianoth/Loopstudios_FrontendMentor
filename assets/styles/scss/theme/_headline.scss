@@ -1,0 +1,26 @@
+@include theme() {
+    &_headline {
+        @include fullWidth;
+        height: 800px;
+        @include backgroundImage("../../images/mobile/image-hero.jpg");
+
+        &_content {
+            @include containerWidth;
+            @include flex;
+            height: 100%;
+
+            &_title {
+                border: 2px solid $color-white;
+                padding: 30px;
+
+                h1 {                    
+                    span  {
+                        font-size: 1em;
+                        display: block;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
