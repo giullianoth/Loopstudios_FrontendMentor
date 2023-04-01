@@ -48,7 +48,7 @@ body img {
 .ls_header_content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,6 +70,7 @@ body img {
   color: hsl(0, 0%, 100%);
   position: relative;
   z-index: 20;
+  cursor: pointer;
 }
 .ls_header_content_menu ul {
   position: fixed;
@@ -106,11 +107,12 @@ body img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-bottom: 60px;
 }
 .ls_headline_content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,4 +127,23 @@ body img {
   font-size: 1em;
   display: block;
   color: hsl(0, 0%, 100%);
+}
+
+.ls_presentation {
+  width: 100%;
+  padding: 60px 0;
+}
+.ls_presentation_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.ls_presentation_content_image {
+  margin-bottom: 40px;
+}
+.ls_presentation_content_info {
+  text-align: center;
+}
+.ls_presentation_content_info_title {
+  margin-bottom: 20px;
 }

@@ -1,0 +1,22 @@
+@include theme() {
+    &_presentation {
+        @include fullWidth;
+        @include containerSpacing;
+
+        &_content {
+            @include containerWidth;
+
+            &_image {
+                margin-bottom: 40px;
+            }
+
+            &_info {
+                text-align: center;
+
+                &_title {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

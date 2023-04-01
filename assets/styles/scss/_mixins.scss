@@ -16,6 +16,10 @@
     width: 100%;
 }
 
+@mixin containerSpacing() {
+    padding: 60px 0;
+}
+
 // BROWSERS CORE
 @mixin setBrowsersCore($attr, $value, $cores: $browsers-core-default) {
     #{$attr}: #{$value};

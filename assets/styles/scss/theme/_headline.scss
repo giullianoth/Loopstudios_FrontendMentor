@@ -3,6 +3,7 @@
         @include fullWidth;
         height: 800px;
         @include backgroundImage("../../images/mobile/image-hero.jpg");
+        margin-bottom: 60px;
 
         &_content {
             @include containerWidth;
