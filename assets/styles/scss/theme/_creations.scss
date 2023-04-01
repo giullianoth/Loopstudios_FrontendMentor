@@ -1,0 +1,66 @@
+@include theme() {
+    &_creations {
+        @include fullWidth;
+        @include containerSpacing;
+        @include relative;
+
+        &_content {
+            @include containerWidth;
+
+            &_title {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+            &_seeall {
+                @include absolute(100%, 50%);
+                transform: translateX(-50%);
+            }
+
+            &_gallery {
+                @include flex;
+                gap: 20px;
+
+                &_item {
+                    @include flex1;
+                    @include relative;
+                    background-color: $color-black;
+                    @include transition;
+
+                    &:hover {
+                        background: none;
+
+                        .ls_creations_content_gallery_item_image {
+                            opacity: 0.3;
+                        }
+
+                        .ls_creations_content_gallery_item_title {
+                            a {
+                                color: $color-black;
+                            }
+                        }
+                    }
+
+                    &_image {
+                        opacity: 0.6;
+                    }
+
+                    &_title {
+                        @include absolute(unset, 20px);
+                        bottom: 20px;
+
+                        a {
+                            color: $color-white;
+                            display: block;
+
+                            span {
+                                font-size: 1.6em;
+                                display: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
