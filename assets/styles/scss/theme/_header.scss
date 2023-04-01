@@ -1,0 +1,67 @@
+/* HEADER */
+@include theme() {
+    &_header {
+        @include fullWidth;
+        padding-top: 40px;
+        @include absolute;
+
+        &_content {
+            @include containerWidth;
+            @include flex(space-between);
+            @include relative;
+
+            &_title {
+                h1 {
+                    display: none;
+                }
+
+                &_logo {
+                    @include relative;
+                    z-index: 20;
+
+                    img {
+                        width: 160px;
+                    }
+                }
+            }
+
+            &_menu {
+                &_icon {
+                    font-size: 1.8em;
+                    color: $color-white;
+                    @include relative;
+                    z-index: 20;
+                }
+
+                ul {
+                    @include fixed(0, -100%);
+                    @include fullWidth;
+                    height: 100%;
+                    background-color: $color-black;
+                    padding: 40px 30px;
+                    z-index: 10;
+
+                    @include flex(center, flex-start);
+                    flex-direction: column;
+                    gap: 30px;
+
+                    @include transition;
+
+                    li {
+                        a {
+                            color: $color-white;
+                            font-family: $font-josefin-sans;
+                            font-size: 2em;
+                            font-weight: 300;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                color: $color-very-dark-gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

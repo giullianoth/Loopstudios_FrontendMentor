@@ -24,6 +24,7 @@ body h1 {
 }
 body a {
   text-decoration: none;
+  transition: all 300ms ease 0s;
 }
 body ul li {
   list-style: none;
@@ -34,4 +35,66 @@ body p {
 body img {
   display: block;
   width: 100%;
+}
+
+/* HEADER */
+.ls_header {
+  width: 100%;
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ls_header_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.ls_header_content_title h1 {
+  display: none;
+}
+.ls_header_content_title_logo {
+  position: relative;
+  z-index: 20;
+}
+.ls_header_content_title_logo img {
+  width: 160px;
+}
+.ls_header_content_menu_icon {
+  font-size: 1.8em;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 20;
+}
+.ls_header_content_menu ul {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 0%);
+  padding: 40px 30px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  transition: all 300ms ease 0s;
+}
+.ls_header_content_menu ul li a {
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.ls_header_content_menu ul li a:hover {
+  color: hsl(0, 0%, 41%);
 }
