@@ -35,6 +35,7 @@
                     @include relative;
                     z-index: 20;
                     cursor: pointer;
+                    @include transition;
 
                     @include setResponsiveDesign($breakpoint-tablet-landscape) {
                         display: none;
