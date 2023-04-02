@@ -114,6 +114,7 @@ body .ls_button:hover {
   color: hsl(0, 0%, 55%);
 }
 
+/* HEADLINE */
 .ls_headline {
   width: 100%;
   height: 800px;
@@ -143,6 +144,7 @@ body .ls_button:hover {
   color: hsl(0, 0%, 100%);
 }
 
+/* PRESENTATION SECTION */
 .ls_presentation {
   width: 100%;
   padding: 60px 0;
@@ -162,6 +164,7 @@ body .ls_button:hover {
   margin-bottom: 20px;
 }
 
+/* CREATIONS SECTION */
 .ls_creations {
   width: 100%;
   padding: 60px 0;
