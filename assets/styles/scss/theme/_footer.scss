@@ -110,10 +110,18 @@
         &_attribution {
             padding-bottom: 10px;
 
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                @include flex;
+            }
+
             p {
                 font-size: 11px;
                 text-align: center;
                 font-family: $font-josefin-sans;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    display: inline-block;
+                }
 
                 a {
                     font-size: inherit;
