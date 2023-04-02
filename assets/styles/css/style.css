@@ -47,6 +47,11 @@ body .ls_button {
   background: none;
   cursor: pointer;
 }
+@media screen and (max-width: 375px) {
+  body .ls_button {
+    font-size: 0.8em;
+  }
+}
 body .ls_button:hover {
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);

@@ -53,6 +53,10 @@ body {
             background: none;
             cursor: pointer;
 
+            @include setResponsiveDesign($layout-mobile, true) {
+                font-size: 0.8em;
+            }
+
             &:hover {
                 background-color: $color-black;
                 color: $color-white;
