@@ -57,5 +57,26 @@ body {
                 color: $color-white;
             }
         }
+
+        &_menuhover {
+            @include relative;
+
+            &:hover::before {
+                transform:  translateX(-50%) scaleX(1);
+            }
+
+            &::before {
+                content: "";
+
+                @include absolute(unset, 50%);
+                bottom: 0;
+                transform: translateX(-50%) scaleX(0);
+                width: 30%;
+                height: 3px;
+                background-color: $color-white;
+
+                @include transition;
+            }
+        }
     }
 }

@@ -57,6 +57,10 @@
                                 color: inherit;
                                 padding-bottom: 10px;
 
+                                &::before {
+                                    @include fullWidth;
+                                }
+
                                 i {                                    
                                     font-size: 1.4em;
                                 }

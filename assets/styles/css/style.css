@@ -50,6 +50,24 @@ body .ls_button:hover {
   background-color: hsl(0, 0%, 0%);
   color: hsl(0, 0%, 100%);
 }
+body .ls_menuhover {
+  position: relative;
+}
+body .ls_menuhover:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+body .ls_menuhover::before {
+  content: "";
+  position: absolute;
+  top: unset;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  width: 30%;
+  height: 3px;
+  background-color: hsl(0, 0%, 100%);
+  transition: all 300ms ease 0s;
+}
 
 /* HEADER */
 .ls_header {
@@ -100,7 +118,7 @@ body .ls_button:hover {
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   transition: all 300ms ease 0s;
 }
 .ls_header_content_menu ul li a {
@@ -109,9 +127,8 @@ body .ls_button:hover {
   font-size: 2em;
   font-weight: 300;
   text-transform: uppercase;
-}
-.ls_header_content_menu ul li a:hover {
-  color: hsl(0, 0%, 55%);
+  display: inline-block;
+  padding: 10px 0;
 }
 
 /* HEADLINE */
@@ -287,6 +304,9 @@ body .ls_button:hover {
 .ls_footer_content_nav2_social ul li a {
   color: inherit;
   padding-bottom: 10px;
+}
+.ls_footer_content_nav2_social ul li a::before {
+  width: 100%;
 }
 .ls_footer_content_nav2_social ul li a i {
   font-size: 1.4em;
