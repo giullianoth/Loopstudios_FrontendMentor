@@ -19,6 +19,7 @@
 
                 @include setResponsiveDesign($breakpoint-desktop-sd) {
                     @include flexBasis(60%);
+                    margin-bottom: 0;
                 }
             }
 
@@ -29,7 +30,7 @@
                 @include setResponsiveDesign($breakpoint-desktop-sd) {
                     @include flexBasis(unset);
                     @include absolute(unset, unset);
-                    bottom: 40px;
+                    bottom: 0;
                     right: 0;
                     width: 55%;
                     background-color: $color-white;
