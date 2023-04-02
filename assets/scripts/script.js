@@ -4,8 +4,7 @@ const mobileMenuIcon = document.querySelector(".j_mobile_menu_icon");
 const arrowUp = document.querySelector(".j_arrowup");
 
 // TOGGLE FIXED HEADER
-window.onscroll = () => {
-
+window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
         fixedHeader.style.backgroundColor = "black";
         fixedHeader.style.padding = "10px 0";
@@ -27,7 +26,7 @@ window.onscroll = () => {
             arrowUp.style.display = "";
         }, 300);
     }
-}
+})
 
 // MOBILE MENU
 mobileMenuIcon.addEventListener("click", () => {
