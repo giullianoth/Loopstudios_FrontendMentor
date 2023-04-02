@@ -75,6 +75,10 @@
                             span {
                                 font-size: 1.6em;
                                 display: inherit;
+
+                                @include setResponsiveDesign($breakpoint-desktop-sd) {
+                                    font-size: 2em;
+                                }
                             }
                         }
                     }
