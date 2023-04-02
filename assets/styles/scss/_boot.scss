@@ -4,6 +4,7 @@
     padding: 0;
     @include setBrowsersCore(box-sizing, border-box);
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +77,29 @@ body {
                 background-color: $color-white;
 
                 @include transition;
+            }
+        }
+
+        &_arrowup {
+            @include fixed(unset, unset);
+            bottom: 0;
+            right: 20px;
+
+            width: 40px;
+            height: 40px;
+            background-color: $color-black;
+
+            @include flex;
+            cursor: pointer;
+
+            opacity: 0;
+            display: none;
+
+            @include transition;
+
+            i {
+                color: $color-white;
+                font-size: 1.2em;
             }
         }
     }
