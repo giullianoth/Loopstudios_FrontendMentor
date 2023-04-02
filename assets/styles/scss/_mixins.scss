@@ -98,3 +98,20 @@
     background-size: $size;
     background-position: $position;
 }
+
+// RESPONSIVE DESIGN
+@mixin setResponsiveDesign($screenWidth, $isMaxWidth: false) {    
+    $width: calc($screenWidth - 1px);
+
+    @if $isMaxWidth == true {
+        @media screen and (max-width: $screenWidth) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (min-width: $width) {
+            @content;
+        }
+    }
+}

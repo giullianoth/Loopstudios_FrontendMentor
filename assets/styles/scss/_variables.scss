@@ -1,6 +1,15 @@
 // BREAKPOINTS
-$breakpoint-mobile: 375px;
-$breakpoint-desktop: 1440px;
+$layout-mobile: 375px;
+$layout-desktop: 1440px;
+
+$breakpoint-mobile: 480px;
+$breakpoint-mobile-landscape: 600px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-landscape: 900px;
+$breakpoint-desktop-sd: 1024px;
+$breakpoint-desktop-hd1: 1366px;
+$breakpoint-desktop-hd2: $layout-desktop;
+$breakpoint-desktop-fhd: 1920px;
 
 // COLORS
 $color-white: hsl(0, 0%, 100%);

@@ -3,7 +3,8 @@
     &_header {
         @include fullWidth;
         padding-top: 40px;
-        @include absolute;
+        @include fixed;
+        z-index: 20;
 
         &_content {
             @include containerWidth;
@@ -32,6 +33,10 @@
                     @include relative;
                     z-index: 20;
                     cursor: pointer;
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        display: none;
+                    }
                 }
 
                 ul {
@@ -48,6 +53,13 @@
 
                     @include transition;
 
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        position: static;
+                        padding: 0;
+                        background: none;
+                        flex-direction: row;
+                    }
+
                     li {
                         a {
                             color: $color-white;
@@ -58,6 +70,12 @@
 
                             display: inline-block;
                             padding: 10px 0;
+
+                            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                                font-size: 1em;
+                                text-transform: none;
+                                font-family: $font-alata;
+                            }
                         }
                     }
                 }

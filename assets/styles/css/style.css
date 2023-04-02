@@ -63,7 +63,7 @@ body .ls_menuhover::before {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%) scaleX(0);
-  width: 30%;
+  width: 50%;
   height: 3px;
   background-color: hsl(0, 0%, 100%);
   transition: all 300ms ease 0s;
@@ -73,9 +73,10 @@ body .ls_menuhover::before {
 .ls_header {
   width: 100%;
   padding-top: 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 20;
 }
 .ls_header_content {
   max-width: 1100px;
@@ -104,6 +105,11 @@ body .ls_menuhover::before {
   z-index: 20;
   cursor: pointer;
 }
+@media screen and (min-width: 899px) {
+  .ls_header_content_menu_icon {
+    display: none;
+  }
+}
 .ls_header_content_menu ul {
   position: fixed;
   top: 0;
@@ -121,6 +127,14 @@ body .ls_menuhover::before {
   gap: 20px;
   transition: all 300ms ease 0s;
 }
+@media screen and (min-width: 899px) {
+  .ls_header_content_menu ul {
+    position: static;
+    padding: 0;
+    background: none;
+    flex-direction: row;
+  }
+}
 .ls_header_content_menu ul li a {
   color: hsl(0, 0%, 100%);
   font-family: "Josefin Sans", sans-serif;
@@ -129,6 +143,13 @@ body .ls_menuhover::before {
   text-transform: uppercase;
   display: inline-block;
   padding: 10px 0;
+}
+@media screen and (min-width: 899px) {
+  .ls_header_content_menu ul li a {
+    font-size: 1em;
+    text-transform: none;
+    font-family: "Alata", sans-serif;
+  }
 }
 
 /* HEADLINE */
