@@ -112,6 +112,7 @@
 
             @include setResponsiveDesign($breakpoint-tablet-landscape) {
                 @include flex;
+                gap: 8px;
             }
 
             p {
