@@ -6,6 +6,8 @@
         @include fixed;
         z-index: 20;
 
+        @include transition;
+
         &_content {
             @include containerWidth;
             @include flex(space-between);
