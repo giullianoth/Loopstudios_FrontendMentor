@@ -1,0 +1,93 @@
+/* FOOTER */
+@include theme() {
+    &_footer {
+        @include fullWidth;
+        margin-top: 120px;
+        background-color: $color-black;
+        color: $color-white;
+
+        &_content {
+            @include containerWidth($container-max-width, $container-padding-x, 60px);
+            @include flex(space-between);
+
+            &_nav1 {
+                @include flex1;
+                text-align: center;
+
+                &_logo {
+                    @include flex;
+                    margin-bottom: 40px;
+
+                    img {
+                        width: 160px;
+                    }
+                }
+
+                &_menu {
+                    margin-bottom: 40px;
+
+                    ul {
+                        @include flex;
+                        flex-direction: column;
+
+                        li {
+                            a{
+                                padding: 10px 0;
+                                display: inline-block;
+                                color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_nav2 {
+                @include flex1;
+                text-align: center;
+
+                &_social {
+                    margin-bottom: 20px;
+
+                    ul {
+                        @include flex;
+                        column-gap: 20px;
+
+                        li {
+                            a {
+                                color: inherit;
+                                padding-bottom: 10px;
+
+                                i {                                    
+                                    font-size: 1.4em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &_rights {
+                    color: $color-dark-gray;
+                }
+            }
+        }
+
+        &_attribution {
+            padding-bottom: 10px;
+
+            p {
+                font-size: 11px;
+                text-align: center;
+                font-family: $font-josefin-sans;
+
+                a {
+                    font-size: inherit;
+                    color: $color-dark-gray;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

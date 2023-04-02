@@ -224,3 +224,88 @@ body .ls_button:hover {
   font-size: 1.6em;
   display: inherit;
 }
+
+/* FOOTER */
+.ls_footer {
+  width: 100%;
+  margin-top: 120px;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+.ls_footer_content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ls_footer_content_nav1 {
+  flex-basis: 100%;
+  text-align: center;
+}
+.ls_footer_content_nav1_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.ls_footer_content_nav1_logo img {
+  width: 160px;
+}
+.ls_footer_content_nav1_menu {
+  margin-bottom: 40px;
+}
+.ls_footer_content_nav1_menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.ls_footer_content_nav1_menu ul li a {
+  padding: 10px 0;
+  display: inline-block;
+  color: inherit;
+}
+.ls_footer_content_nav2 {
+  flex-basis: 100%;
+  text-align: center;
+}
+.ls_footer_content_nav2_social {
+  margin-bottom: 20px;
+}
+.ls_footer_content_nav2_social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.ls_footer_content_nav2_social ul li a {
+  color: inherit;
+  padding-bottom: 10px;
+}
+.ls_footer_content_nav2_social ul li a i {
+  font-size: 1.4em;
+}
+.ls_footer_content_nav2_rights {
+  color: hsl(0, 0%, 55%);
+}
+.ls_footer_attribution {
+  padding-bottom: 10px;
+}
+.ls_footer_attribution p {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+.ls_footer_attribution p a {
+  font-size: inherit;
+  color: hsl(0, 0%, 55%);
+}
+.ls_footer_attribution p a:hover {
+  text-decoration: underline;
+}
