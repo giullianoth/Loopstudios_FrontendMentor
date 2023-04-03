@@ -1,94 +1,175 @@
-# Frontend Mentor - Loopstudios landing page
+# Loopstudios landing page - Web Design Project - Frontend Mentor
 
-![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
+[![HTML 5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS 3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Sass](https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white)](https://sass-lang.com/)
 
-## Welcome! 👋
+---
 
-Thanks for checking out this front-end coding challenge.
+**Disponível em | Avaliable in: Português - BR | English**
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+Esta é uma landing page para a página fictícia Loopstudios, mais um desafio proposto pela plataforma [Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Construída para fins acadêmicos, foram aplicadas as tecnologias e boas práticas do web design.
 
-**To do this challenge, you need a good understanding of HTML and CSS and a basic understanding of JavaScript.**
+Neste projeto, os usuários são capazes de:
 
-## The challenge
+- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo.
+- Ver os estados de foco para todos os elementos interativos na página.
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+*This is a landing page for the fictitious Loopstudios page, another challenge proposed by the [Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw) platform. Built for academic purposes, web design technologies and good practices were applied.*
 
-This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!
+*In this project users are able to:*
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+- *View the optimal layout for the site depending on their device's screen size.*
+- *See hover states for all interactive elements on the page.*
 
-Your users should be able to:
+## Status do projeto | Project status
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+Projeto finalizado, sendo aberto a propostas de melhorias ou correções.
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+*Finalized project, being open to proposals for improvements or corrections.*
 
-## Where to find everything
+## Layout
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+Construído a partir do método *mobile-first*, o projeto é responsivo, ou seja, é adaptável aos mais variados tamanhos e resoluções de telas, conforme demonstrado a seguir.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+*Built from the mobile-first method, the project is responsive, that is, it is adaptable to the most varied sizes and screen resolutions, as shown below.*
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+![Captura de tela em 375px | Screenshot in 375px](assets/images/screenshots/screenshot_375px.png)
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Captura de tela em 375px | Screenshot in 375px
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+---
 
-## Building your project
+![Captura de tela em 768px | Screenshot in 768px](assets/images/screenshots/screenshot_768px.png)
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Captura de tela em 768px | Screenshot in 768px
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+---
 
-## Deploying your project
+![Captura de tela em 1440px | Screenshot in 1440px](assets/images/screenshots/screenshot_1440px.png)
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Captura de tela em 1440px | Screenshot in 1440px
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+---
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
+Você também pode conferir a página acessando este link: [https://loopstudios-lake.vercel.app/](https://loopstudios-lake.vercel.app/).
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+**Observação:** Por se tratar de um projeto para fins acadêmicos, os links contidos na página não funcionarão, exceto os dois últimos localizados no rodapé.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+*You can also check the page by accessing this link: [https://loopstudios-lake.vercel.app/](https://loopstudios-lake.vercel.app/).*
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+_**Note:** As this is a project for academic purposes, the links on the page will not work, except for the last two located at the footer._
 
-## Submitting your solution
+## Tecnologias utilizadas | Technologies used
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+Foram utilizadas as seguintes tecnologias para a construção desta página:
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+*The following technologies were used to build this page:*
 
-## Sharing your solution
+- [HTML 5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS 3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Sass](https://sass-lang.com/)
 
-There are multiple places you can share your solution:
+Vale lembrar que foram aplicados o uso de tags semânticas ao HTML, para tornar a página com acessibilidade facilitada e seguir as boas práticas do desenvolvimento web.
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+O uso do preprocessador CSS (nesse caso o Sass) torna mais produtiva a aplicação das folhas de estilo, o que possibilita a manutenibilidade posteriormente.
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+*It is worth remembering that the use of semantic tags was applied to the HTML, to make the page easier to access and follow the good practices of web development.*
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+*Using the CSS preprocessor (in this case Sass) makes the application of stylesheets more productive, which enables later maintainability.*
 
-## Got feedback for us?
+## Como instalar | How to install
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- Instale o editor [VS Code](https://code.visualstudio.com/) (recomendo fortemente, mas se há outro editor do seu gosto, não tem problema) e abra o projeto nele.
+- Se você está usando VS Code, instale a extensão "[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)", ela que vai converter seu Sass em CSS. Após instalado:
+    - Clique no ícone de engrenagem, depois em "Configurações de extensão" e depois em "settins.json";
+    - Em ```settings.json``` acrescente os seguintes parâmetros:
+    ```json
+    "liveSassCompile.settings.formats":[ 
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "assets/styles/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "assets/styles/css"
+        },
+    ]
+    ```
+    - Depois, na parte inferior do editor, clique em "Watch Sass".
+- Se você não está usando VS Code, você precisa instalar o NodeJS para usar o Sass.
+    - Depois de instalar o NodeJS, abra o prompt de comando e navegue até o diretório do projeto.
+    ```
+    cd [caminho do projeto]
+    ```
+    - Instale o Sass com o ```npm```.
+    ```
+    npm install -g sass
+    ```
+    - Ative o compilador com o seguinte comando: (Para criar a versão minificada do CSS utilize a flag ```--style=compressed```)
+    ```
+    sass assets/styles/scss/style.scss:assets/styles/css/style.css --watch
+    ```
+- Recomendo também instalar a extensão "[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)". Caso não queira, abra o arquivo ```index.html``` no navegador.
+- Divirta-se!
 
-**Have fun building!** 🚀
+*To download and install the project on your computer, follow these steps:*
+
+- *Install the [VS Code](https://code.visualstudio.com/) editor (I highly recommend it, but if there's another editor you like, no problem) and open the project in it.*
+- *If you are using VS Code, install the "[Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)" extension, which will convert your Sass into CSS. After installed:*
+    - *Click on the gear icon, then on "Extension settings" and then on "settins.json";*
+    - *In ```settings.json``` add the following parameters:*
+    ```json
+    "liveSassCompile.settings.formats":[ 
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "assets/styles/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "assets/styles/css"
+        },
+    ]
+    ```
+    - *Then, at the bottom of the editor, click on "Watch Sass".*
+- *If you are not using VS Code, you need to install NodeJS to use Sass.*
+    - *After installing NodeJS, open the command prompt and navigate to your project directory.*
+    ```
+    cd [project path]
+    ```
+    - *Install Sass with ```npm```.*
+    ```
+    npm install -g sass
+    ```
+    - *Activate the compiler with the following command: (To create the minified version of the CSS use the flag ```--style=compressed```)*
+    ```
+    sass assets/styles/scss/style.scss:assets/styles/css/style.css --watch
+    ```
+
+- *I also recommend installing the "[Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)" extension. If not, open the ```index.html``` file in your browser.*
+- *Enjoy it!*
+
+## O que eu aprendi | What I learned
+
+Alguns recursos de rolagem de página foram utilizados nesse projeto, me possibilitando explorar as propriedades do objeto "window" do JavaScript.
+
+*Some page scrolling features were used in this project, allowing me to explore the properties of the JavaScript "window" object.*
+
+## Autor | Author
+
+Feito com :heart: por este cara sonhador:
+
+*Made with :heart: by this dreamy guy:*
+
+| <img src="https://avatars.githubusercontent.com/u/106249494?v=4" width="100px" style="border-radius: 50%"> **Giulliano Guimarães** |
+| ---------------------------------------------------------------------------------------------------------------------------------- |
+|[![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/giullianoth) [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/giullianoth/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giullianoth/) [![GMail](https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white)](mailto:llthguimaraes@gmail.com) |
