@@ -193,7 +193,7 @@ window.addEventListener("click", () => {
 
 ```js
 window.onscroll = () => {
-    // Codifique e seja feliz!
+    // Code and be happy!
 }
 
 // OR
