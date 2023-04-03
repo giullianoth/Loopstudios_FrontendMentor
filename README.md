@@ -162,7 +162,53 @@ Para baixar e instalar o projeto no seu computador, siga os seguintes passos:
 
 Alguns recursos de rolagem de página foram utilizados nesse projeto, me possibilitando explorar as propriedades do objeto "window" do JavaScript.
 
+Ao utilizar o evento "scroll" para o objeto "window", é possível controlar comportamentos do DOM e dar um aspecto mais vivo para a página. No meu caso, utilizei a mudança de estilo para o "header", que é fixo, adicionando uma cor de fundo e alterando sua altura. Também acrescentei um botão na base da página para que, ao ser clicada, a página seja rolada até o início.
+
+Utilizando essa propriedade em conjunto com o atributo ```transition``` do CSS, seu site não fica monótono.
+
+```js
+window.onscroll = () => {
+    // Codifique e seja feliz!
+}
+
+// OU
+
+window.addEventListener("click", () => {
+    // Codifique mais e seja feliz!
+})
+```
+
+```css
+/* Exemplo de aplicação do "transition" */
+.seletor {
+    transition: all 0.5s ease;
+}
+```
+
 *Some page scrolling features were used in this project, allowing me to explore the properties of the JavaScript "window" object.*
+
+*By using the "scroll" event for the "window" object, it is possible to control DOM behaviors and give a more lively aspect to the page. In my case, I used the style change for the "header", which is fixed, adding a background color and changing its height. I also added a button at the bottom of the page so that, when clicked, the page is scrolled to the beginning.*
+
+*Using this property in conjunction with the CSS ```transition``` attribute, your site does not look monotonous.*
+
+```js
+window.onscroll = () => {
+    // Codifique e seja feliz!
+}
+
+// OR
+
+window.addEventListener("click", () => {
+    // Code more and be happy!
+})
+```
+
+```css
+/* Example application of "transition" */
+.selector {
+    transition: all 0.5s ease;
+}
+```
 
 ## Autor | Author
 
