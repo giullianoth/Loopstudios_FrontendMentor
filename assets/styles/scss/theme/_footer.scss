@@ -110,7 +110,7 @@
         &_attribution {
             padding-bottom: 10px;
 
-            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+            @include setResponsiveDesign($breakpoint-tablet) {
                 @include flex;
                 gap: 8px;
             }
@@ -120,7 +120,7 @@
                 text-align: center;
                 font-family: $font-josefin-sans;
 
-                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                @include setResponsiveDesign($breakpoint-tablet) {
                     display: inline-block;
                 }
 
