@@ -3,18 +3,30 @@
     &_headline {
         @include fullWidth;
         height: 800px;
-        @include backgroundImage("../../images/mobile/image-hero.jpg");
+        background-color: $color-black;
+        // @include backgroundImage("../../images/mobile/image-hero.jpg");
         margin-bottom: 60px;
+        @include relative;
 
         @include setResponsiveDesign($breakpoint-tablet-landscape) {
-            @include backgroundImage("../../images/desktop/image-hero.jpg");
+            // @include backgroundImage("../../images/desktop/image-hero.jpg");
             background-position: top center;
             height: 600px;
+        }
+
+        &::before {
+            content: "";
+            @include absolute;
+            @include backgroundImage("../../images/desktop/image-hero.jpg");
+            @include fullWidth;
+            height: 100%;
+            opacity: 0.6;
         }
 
         &_content {
             @include containerWidth;
             @include flex;
+            @include relative;
             height: 100%;
 
             @include setResponsiveDesign($breakpoint-tablet-landscape) {
