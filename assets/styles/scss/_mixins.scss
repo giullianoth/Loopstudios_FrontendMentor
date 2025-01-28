@@ -27,7 +27,7 @@
 // BROWSERS
 @mixin setBrowsers($attr, $value, $browsers: $browsers-default) {    
     @each $browser in $browsers {
-        -#{$browser}-#{$attr}: #{$browser};
+        -#{$browser}-#{$attr}: #{$value};
     }
 
     #{$attr}: #{$value};
