@@ -1,110 +1,118 @@
 /* BOOT CONFIG */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    @include setBrowsersCore(box-sizing, border-box);
-    font-size: 1rem;
+    @include setBrowsers(box-sizing, border-box);
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: $font-alata;
     color: $color-dark-gray;
+    font-size: 1em;
+}
 
-    h1, h2, h3, h4, h5, h6 {
-        text-transform: uppercase;
-        font-family: $font-josefin-sans;
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: $font-josefin-sans;
+    color: $color-black;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    @include transition;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+picture {
+    display: flex;
+}
+
+@include theme() {
+    &button {
+        border: 1px solid $color-black;
+        padding: 12px 14px;
+        display: inline-block;
         color: $color-black;
-        font-weight: normal;
-    }
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        background: none;
+        cursor: pointer;
 
-    h1 {
-        font-size: 2.2em;
-    }
-
-    a {
-        text-decoration: none;
-        @include transition;
-    }
-
-    ul {
-        li {
-            list-style: none;
-        }
-    }
-
-    p {
-        line-height: 1.6em;
-    }
-
-    img {
-        display: block;
-        width: 100%;
-    }
-
-    @include theme() {
-        &_button {
-            border: 1px solid $color-black;
-            padding: 12px 40px;
-            display: inline-block;
-            color: $color-black;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            background: none;
-            cursor: pointer;
-
-            @include setResponsiveDesign($layout-mobile, true) {
-                font-size: 0.8em;
-            }
-
-            &:hover {
-                background-color: $color-black;
-                color: $color-white;
-            }
+        @include setResponsiveDesign($layout-mobile, true) {
+            font-size: 0.8em;
         }
 
-        &_menuhover {
-            @include relative;
-
-            &:hover::before {
-                transform:  translateX(-50%) scaleX(1);
-            }
-
-            &::before {
-                content: "";
-
-                @include absolute(unset, 50%);
-                bottom: 0;
-                transform: translateX(-50%) scaleX(0);
-                width: 50%;
-                height: 3px;
-                background-color: $color-white;
-
-                @include transition;
-            }
-        }
-
-        &_arrowup {
-            @include fixed(unset, unset);
-            bottom: 0;
-            right: 20px;
-
-            width: 40px;
-            height: 40px;
+        &:hover {
             background-color: $color-black;
+            color: $color-white;
+        }
+    }
 
-            @include flex;
-            cursor: pointer;
+    &link-effect {
+        @include relative;
 
-            opacity: 0;
-            display: none;
-
-            @include transition;
-
-            i {
-                color: $color-white;
-                font-size: 1.2em;
+        &:hover {
+            &::before {
+                transform: translateX(-50%) scaleX(1);
             }
+        }
+
+        &::before {
+            content: "";
+            @include absolute(unset, 50%);
+            bottom: 0;
+            transform: translateX(-50%) scaleX(0);
+            width: 50%;
+            height: 3px;
+            background-color: $color-white;
+            @include transition;
+        }
+    }
+
+    &arrow-up {
+        @include fixed(unset, unset);
+        bottom: 0;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background-color: $color-black;
+        @include flex;
+        cursor: pointer;
+        visibility: hidden;
+        opacity: 0;
+        @include transition;
+
+        &.visible {
+            bottom: 20px;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        i {
+            color: $color-white;
+            font-size: 1.2em;
         }
     }
 }

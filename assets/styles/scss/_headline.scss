@@ -1,7 +1,7 @@
 /* HEADLINE */
 @include theme() {
-    &_headline {
-        @include fullWidth;
+    &headline {
+        @include containerFluid;
         height: 800px;
         background-color: $color-black;
         margin-bottom: 60px;
@@ -15,18 +15,17 @@
         &::before {
             content: "";
             @include absolute;
-            @include backgroundImage("../../images/mobile/image-hero.jpg");
-            @include fullWidth;
-            height: 100%;
+            @include containerFluid(true);
+            @include backgroundImage("mobile/image-hero.jpg");
             opacity: 0.6;
 
             @include setResponsiveDesign($breakpoint-tablet-landscape) {
-                @include backgroundImage("../../images/desktop/image-hero.jpg");
+                @include backgroundImage("desktop/image-hero.jpg");
             }
         }
 
-        &_content {
-            @include containerWidth;
+        &__container {
+            @include container;
             @include flex;
             @include relative;
             height: 100%;
@@ -34,25 +33,26 @@
             @include setResponsiveDesign($breakpoint-tablet-landscape) {
                 justify-content: flex-start;
             }
+        }
 
-            &_title {
-                border: 2px solid $color-white;
-                padding: 20px;
+        &__title {
+            border: 2px solid $color-white;
+            padding: 20px;
+
+            @include setResponsiveDesign($breakpoint-mobile-landscape) {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.2em;
+                color: $color-white;
 
                 @include setResponsiveDesign($breakpoint-mobile-landscape) {
-                    padding: 30px;
+                    font-size: 4.4em;
                 }
 
-                h1 {                    
-                    span  {
-                        font-size: 1em;
-                        display: block;
-                        color: $color-white;
-
-                        @include setResponsiveDesign($breakpoint-mobile-landscape) {
-                            font-size: 2em;
-                        }
-                    }
+                span {
+                    display: block;
                 }
             }
         }

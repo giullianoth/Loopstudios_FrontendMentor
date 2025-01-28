@@ -1,50 +1,33 @@
-const fixedHeader = document.querySelector(".j_fixed_header");
-const mobileMenu = document.querySelector(".j_mobile_menu");
-const mobileMenuIcon = document.querySelector(".j_mobile_menu_icon");
-const arrowUp = document.querySelector(".j_arrowup");
+const fixedHeader = document.querySelector(".j_fixed_header")
+const arrowUp = document.querySelector(".j_arrow_up")
+const mobileMenu = document.querySelector(".j_mobile_menu")
+const mobileMenuIcon = document.querySelector(".j_mobile_menu_icon")
 
 // TOGGLE FIXED HEADER
 window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
-        fixedHeader.style.backgroundColor = "black";
-        fixedHeader.style.padding = "10px 0";
-
-        arrowUp.style.display = "flex";
-
-        setTimeout(() => {            
-            arrowUp.style.opacity = 1;
-            arrowUp.style.bottom = "20px";
-        }, 10);
+        fixedHeader.classList.add("scrolling")
+        arrowUp.classList.add("visible")
     } else {
-        fixedHeader.style.backgroundColor = "";
-        fixedHeader.style.padding = "";
-
-        arrowUp.style.opacity = "";
-        arrowUp.style.bottom = "";
-
-        setTimeout(() => {
-            arrowUp.style.display = "";
-        }, 300);
+        fixedHeader.classList.remove("scrolling")
+        arrowUp.classList.remove("visible")
     }
 })
 
+// SCROLL UP WITH ARROW
+arrowUp.addEventListener("click", () => window.scrollTo(0, 0))
+
 // MOBILE MENU
 mobileMenuIcon.addEventListener("click", () => {
-    mobileMenu.style.left = mobileMenu.offsetLeft !== 0 ? 0 : "";
+    let icon = mobileMenuIcon.querySelector("img")
 
-    mobileMenuIcon.style.transform = "translateY(-100%)";
-    mobileMenuIcon.style.opacity = 0;
+    mobileMenu.classList.toggle("open")
+    mobileMenuIcon.style.transform = "translateY(-100%)"
+    mobileMenuIcon.style.opacity = 0
 
     setTimeout(() => {
-        mobileMenuIcon.classList.toggle("fa-bars");
-        mobileMenuIcon.classList.toggle("fa-xmark");
-
-        mobileMenuIcon.style.transform = "";
-        mobileMenuIcon.style.opacity = "";
-    }, 300);
-})
-
-// SCROLL UP WITH ARROW
-arrowUp.addEventListener("click", () => {
-    window.scrollTo(0, 0);
+        icon.src = `/assets/images/icon-${mobileMenu.offsetLeft === 0 ? "close" : "hamburger"}.svg`
+        mobileMenuIcon.style.transform = ""
+        mobileMenuIcon.style.opacity = ""
+    }, 300);    
 })

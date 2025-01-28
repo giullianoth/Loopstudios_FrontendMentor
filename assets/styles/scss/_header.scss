@@ -1,0 +1,91 @@
+/* HEADER */
+@include theme() {
+    &header {
+        @include containerFluid;
+        @include fixed;
+        z-index: 20;
+        padding-top: 40px;
+        @include transition;
+
+        &.scrolling {
+            background-color: $color-black;
+            padding-block: 10px;
+        }
+
+        &__container {
+            @include container;
+            @include flex(space-between);
+            @include relative;
+        }
+
+        &__page-title {
+            h1 {
+                display: none;
+            }
+        }
+
+        &__logo {
+            @include relative;
+            z-index: 20;
+
+            img {
+                width: 160px;
+            }
+        }
+
+        &__navigation {
+            &-icon {
+                @include relative;
+                z-index: 20;
+                cursor: pointer;
+                @include transition;
+
+                @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                    display: none;
+                }
+            }
+        }
+
+        &__menu {
+            @include fixed(0, -100%);
+            @include containerFluid(true);
+            background-color: $color-black;
+            padding: 40px 30px;
+            z-index: 10;
+            overflow-y: auto;
+            @include flex(center, flex-start);
+            @include column;
+            gap: 20px;
+            @include transition;
+
+            &.open {
+                left: 0;
+            }
+
+            @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                position: static;
+                padding: 0;
+                background: none;
+                @include row;
+            }
+
+            &-item {
+                a {
+                    color: $color-white;
+                    font-family: $font-josefin-sans;
+                    font-size: 2em;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    padding-block: 10px;
+
+                    @include setResponsiveDesign($breakpoint-tablet-landscape) {
+                        font-size: 1em;
+                        text-transform: none;
+                        font-family: $font-alata;
+                    }
+                }
+            }
+        }
+    }
+}

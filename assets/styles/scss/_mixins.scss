@@ -1,32 +1,36 @@
 // THEME
 @mixin theme() {
-    .ls {
+    .ls- {
         @content;
     }
 }
 
-// CONTAINER WIDTH
-@mixin containerWidth($maxWidth: $container-max-width, $paddingX: $container-padding-x, $paddingY: $container-padding-y) {
-    max-width: $maxWidth;
-    margin: 0 auto;
-    padding: $paddingY $paddingX;
+// CONTAINER
+@mixin container($width: $container-width, $spacing: $container-inline-spacing) {
+    max-width: $width;
+    margin-inline: auto;
+    padding-inline: $spacing;
 }
 
-@mixin fullWidth() {
+@mixin containerFluid($fillscreen: false) {
     width: 100%;
+
+    @if $fillscreen == true {
+        height: 100%;
+    }
 }
 
 @mixin containerSpacing() {
-    padding: 60px 0;
+    padding-block: 60px;
 }
 
-// BROWSERS CORE
-@mixin setBrowsersCore($attr, $value, $cores: $browsers-core-default) {
-    #{$attr}: #{$value};
-
-    @each $core in $cores {
-        -#{$core}-#{$attr}: #{$value};
+// BROWSERS
+@mixin setBrowsers($attr, $value, $browsers: $browsers-default) {    
+    @each $browser in $browsers {
+        -#{$browser}-#{$attr}: #{$browser};
     }
+
+    #{$attr}: #{$value};
 }
 
 // FLEXBOX
@@ -52,15 +56,23 @@
 }
 
 @mixin flex2($gap: 0) {
-    @include flexBasis(calc(100% / 2), $gap);
+    @include flexBasis(calc(100% / 2), calc($gap - ($gap / 2)));
 }
 
 @mixin flex3($gap: 0) {
-    @include flexBasis(calc(100% / 3), $gap);
+    @include flexBasis(calc(100% / 3), calc($gap - ($gap / 3)));
 }
 
 @mixin flex4($gap: 0) {
-    @include flexBasis(calc(100% / 4), $gap);
+    @include flexBasis(calc(100% / 4), calc($gap - ($gap / 4)));
+}
+
+@mixin column() {
+    flex-direction: column;
+}
+
+@mixin row() {
+    flex-direction: row;
 }
 
 // POSITION
@@ -91,7 +103,7 @@
 // BACKGROUND IMAGE
 @mixin backgroundImage($image: "", $repeat: no-repeat, $size: cover, $position: center center) {
     @if $image != "" {
-        background-image: url($image);
+        background-image: url("#{$image-path}/#{$image}");
     }
 
     background-repeat: $repeat;
@@ -100,9 +112,7 @@
 }
 
 // RESPONSIVE DESIGN
-@mixin setResponsiveDesign($screenWidth, $isMaxWidth: false) {    
-    $width: calc($screenWidth - 1px);
-
+@mixin setResponsiveDesign($screenWidth, $isMaxWidth: false) {   
     @if $isMaxWidth == true {
         @media screen and (max-width: $screenWidth) {
             @content;
@@ -110,7 +120,7 @@
     }
 
     @else {
-        @media screen and (min-width: $width) {
+        @media screen and (min-width: $screenWidth) {
             @content;
         }
     }
