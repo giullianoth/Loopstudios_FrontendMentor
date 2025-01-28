@@ -13,17 +13,7 @@
 
 Esta é uma landing page para a página fictícia Loopstudios, mais um desafio proposto pela plataforma [Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Construída para fins acadêmicos, foram aplicadas as tecnologias e boas práticas do web design.
 
-Neste projeto, os usuários são capazes de:
-
-- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo.
-- Ver os estados de foco para todos os elementos interativos na página.
-
 *This is a landing page for the fictitious Loopstudios page, another challenge proposed by the [Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw) platform. Built for academic purposes, web design technologies and good practices were applied.*
-
-*In this project users are able to:*
-
-- *View the optimal layout for the site depending on their device's screen size.*
-- *See hover states for all interactive elements on the page.*
 
 ## Status do projeto | Project status
 
