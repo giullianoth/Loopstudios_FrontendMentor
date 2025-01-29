@@ -22,7 +22,7 @@
             margin-bottom: 40px;
 
             @include setResponsiveDesign($breakpoint-tablet-landscape) {
-                text-align-last: left;
+                text-align: left;
                 @include flex(space-between);
             }
         }
